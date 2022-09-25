@@ -94,16 +94,12 @@ public class InterfaceLogin extends javax.swing.JFrame {
 
     private void buttonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLoginActionPerformed
         // TODO add your handling code here:
-        //API:
         PegarDadosLogin pegarDadosDeLogin = new PegarDadosLogin();
 
         String emailLogin = email.getText();
         String senhaLogin = String.valueOf(senha.getPassword());
         Boolean isLogado = true;
-
-        //System.out.println(pgDados.getEmails());
-        //System.out.println(pgDados.getSenhas());
-        //System.out.println(pgDados.getTamanhoLista());
+        
         for (int i = 0; i < pegarDadosDeLogin.getTamanhoLista(); i++) {
             if (emailLogin.equals(pegarDadosDeLogin.getEmails().get(i))
                     && senhaLogin.equals(pegarDadosDeLogin.getSenhas().get(i))) {
@@ -112,12 +108,15 @@ public class InterfaceLogin extends javax.swing.JFrame {
                 this.dispose();
                 logado.setVisible(true);
                 isLogado = true;
-            }else{
+                break;
+            } else {
                 isLogado = false;
             }
         }
-        
-        if(isLogado == false){
+
+        if (isLogado == true) {
+            System.out.println("Login realizado!");
+        }else{
             System.out.println("E-mail ou senha incorreto!");
             JOptionPane.showMessageDialog(this, "E-mail ou senha incorreto!");
         }
