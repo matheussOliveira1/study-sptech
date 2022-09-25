@@ -12,14 +12,20 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.github.britooo</groupId>
-            <artifactId>looca-api</artifactId>
-            <version>1.0.3</version>
+          <groupId>com.github.britooo</groupId>
+          <artifactId>looca-api</artifactId>
+          <version>1.0.3</version>
         </dependency>
+        
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>AbsoluteLayout</artifactId>
+            <version>RELEASE126</version>
         </dependency>
     </dependencies>
     <name>study-looca</name>
