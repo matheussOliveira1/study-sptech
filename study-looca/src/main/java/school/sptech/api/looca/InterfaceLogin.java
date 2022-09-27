@@ -69,7 +69,7 @@ public class InterfaceLogin extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel2.setText("Bem-vindo(a) de volta!");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(210, 200, 270, 30);
+        jLabel2.setBounds(210, 190, 270, 30);
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -92,7 +92,7 @@ public class InterfaceLogin extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo.png"))); // NOI18N
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(260, 30, 170, 140);
+        jLabel5.setBounds(260, 20, 170, 140);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
