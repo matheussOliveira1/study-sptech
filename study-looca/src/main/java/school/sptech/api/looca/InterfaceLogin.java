@@ -30,6 +30,7 @@ public class InterfaceLogin extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         senha = new javax.swing.JPasswordField();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(236, 236, 236));
@@ -50,7 +51,7 @@ public class InterfaceLogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(buttonLogin);
-        buttonLogin.setBounds(220, 390, 360, 32);
+        buttonLogin.setBounds(200, 440, 270, 32);
 
         email.setBackground(new java.awt.Color(233, 233, 233));
         email.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -62,32 +63,36 @@ public class InterfaceLogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(email);
-        email.setBounds(220, 270, 365, 40);
+        email.setBounds(110, 270, 470, 40);
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel2.setText("Bem-vindo(a) de volta!");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(270, 210, 270, 20);
+        jLabel2.setBounds(210, 200, 270, 30);
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setText("Senha:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(220, 320, 60, 20);
+        jLabel3.setBounds(110, 330, 60, 20);
 
         jLabel4.setBackground(new java.awt.Color(0, 0, 0));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setText("Email:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(220, 250, 60, 20);
+        jLabel4.setBounds(110, 240, 60, 20);
 
         senha.setBackground(new java.awt.Color(233, 233, 233));
         senha.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         senha.setForeground(new java.awt.Color(0, 0, 0));
         senha.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(senha);
-        senha.setBounds(220, 340, 370, 40);
+        senha.setBounds(110, 360, 470, 40);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo.png"))); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(260, 30, 170, 140);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -168,6 +173,7 @@ public class InterfaceLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPasswordField senha;
     // End of variables declaration//GEN-END:variables
 }
