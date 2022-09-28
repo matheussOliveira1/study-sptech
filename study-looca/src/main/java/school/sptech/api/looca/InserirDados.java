@@ -16,6 +16,11 @@ public class InserirDados {
     public void inserirBd() {
 
         Looca looca = new Looca();
+        String dadosFabricante = looca.getSistema().getFabricante();
+        String dadosSo = looca.getSistema().getSistemaOperacional();
+        String dadosNomeProcessador = looca.getProcessador().getNome();
+        String dadosFrequenciaProcessador = 
+                looca.getProcessador().getFrequencia().toString();
 
         try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
                 Statement stmt = conn.createStatement();) {
